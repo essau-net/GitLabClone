@@ -119,3 +119,24 @@ main {
     width: 95%;
     margin: 1vh auto;
 }
+.sign-in-options li{
+    list-style: none;
+}
+.sign-in-options a{
+    text-decoration: none;
+    
+
+}
+.sign-in-options .sign-in-option__logo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 4vw;
+    height: 4vh;
+}
+.sign-in-options .sign-in-option__logo:nth-child(1){
+    background-image: url('../IMG/googleLogo.png');
+}
+.sign-in-options .sign-in-option__logo:nth-child(2){
+    background-image: url('../IMG/githubLogo.png');
+}
