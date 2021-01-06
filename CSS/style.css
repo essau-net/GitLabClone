@@ -1,0 +1,121 @@
+:root {
+    --border-color: #dfdfdf;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+html {
+    font-size: 62.5%;
+    font-family:  'Blinker', sans-serif;
+}
+header .nav-container{
+    width: 100%;
+    height: 6vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .nav {
+    list-style: none;
+}
+header .nav__element{
+    background-image: url("../IMG/gitLabLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 24px;
+    height: 24px;   
+}
+main {
+    height: 400vh;
+    width: 100%;
+}
+.title-container{
+    height: 13vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title-container h1 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-left: 4.5vw;
+}
+.sign-in-container {
+    width: 100%;
+}
+.sing-in-form,
+.sign-in-options-container {
+    width: 95%;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin: 2vh auto;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 0 1px #dbdbdb;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding: 15px;
+}
+.sing-in-form label {
+    width: 100%;
+    margin: 2vh auto;
+    display: block;
+}
+.sing-in-form span {
+    display: block;
+}
+.sing-in-form input {
+    width: 100%;
+    height: 5.5vh;
+    border-radius: .25rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 0 1px #dbdbdb;
+    outline: none;
+}
+.sing-in-form input[type=text]:focus {
+    border: 2px   solid #80bdfe;
+}
+.remember-checkbox,
+.remember-checkbox label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.remember-checkbox input {
+    width: auto;
+    margin-right: 1vw;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+}
+.remember-checkbox span {
+    display: inline-block;
+}
+.remember-checkbox div {
+    flex-grow: 1;
+}
+.remember-checkbox a{
+    min-width: 130px
+}
+.sing-in-form input[type=submit]{
+    background-color: #108548;
+    color: #dfdfdf;
+}
+.sing-in-form input[type=submit]:hover {
+    background-color: #0d7540;
+    cursor: pointer;
+}
+.create-account { 
+    font-size: 1.3rem;
+    font-weight: 300;
+    width: 95%;
+    margin: 1vh auto;
+}
